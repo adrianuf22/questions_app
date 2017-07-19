@@ -1,0 +1,22 @@
+{
+  "name": "enquete-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "npm-sass": "^2.2.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-scripts": "0.9.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "scripts": {
+    "start": "npm run watch-css & react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "build-css": "npm-sass ./src/Assets/style/App.scss > ./public/css/App.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  }
+}

@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; }
+
+.header {
+  background-color: #009688;
+  height: 55px;
+  color: white;
+  line-height: 55px; }
+  .header .title {
+    display: inline-block;
+    margin: 0;
+    padding: 0 10px; }
